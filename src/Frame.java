@@ -1,23 +1,28 @@
 /*******************************************************************
  Name: Aly Ashour
  Date: October 29, 2023,
- Description:
  ********************************************************************/
 
 /**
  * A data class representing a CAN frame
  */
 public class Frame {
-    private final BitField id, data;
+    private final ID id;
+    private final Data data;
 
     /**
-     * Constructor takes two arguments
+     * Main constructor.
      * @param id    in integer id
      * @param data  a data field containing data
      */
-    public Frame(int id, Data data){
-        this.id = new BitField(IDs.getTotalBitCount(), id);
-        this.data = data.toBitField();
+    public Frame(ID id, Data data){
+        this.id = id;
+        this.data = data;
+    }
+
+    public long toLong(){
+        BitField idbf = id.getBitField(), databf = data.toBitField();
+        return idbf.plus(databf).getValue();
     }
 
     @Override

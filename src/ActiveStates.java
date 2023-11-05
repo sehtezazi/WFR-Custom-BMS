@@ -1,6 +1,3 @@
-package states
-
-import IDs
 
 /*******************************************************************
  * Name: Aly Ashour
@@ -8,7 +5,11 @@ import IDs
  * Date: October 29, 2023,
  * Description:
  *******************************************************************/
-class ActiveState : IDs(ACTIVE) {
 
+
+class ActiveStates extends ID_Generator {
+    public ActiveStates(){
+        super(ID.ACTIVE);
+    }
 }
 
