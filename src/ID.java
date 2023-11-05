@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-
 /*******************************************************************
  Name: Aly Ashour
  Date: October 29, 2023,
@@ -8,6 +5,9 @@ import java.util.Arrays;
  This class represents an ID.
  It also encapsulates all static ID info (like # of bits & state codes). 
  ********************************************************************/
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ID {
     private BitField state;

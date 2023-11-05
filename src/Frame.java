@@ -1,6 +1,6 @@
 /*******************************************************************
  Name: Aly Ashour
- Date: October 29, 2023,
+ Date: October 29, 2023
  ********************************************************************/
 
 /**
@@ -20,6 +20,10 @@ public class Frame {
         this.data = data;
     }
 
+    /**
+     * Converts to a long.
+     * @return a long representation of the frame (if possible).
+     */
     public long toLong(){
         BitField idbf = id.getBitField(), databf = data.toBitField();
         return idbf.plus(databf).getValue();

@@ -4,9 +4,9 @@
  Description:
  Represents the data part of a CAN frame.
  Consists of an n number of bytes and the number n.
- I have capped this at 4 bytes for now. Increasing this limit shouldn't
- be too hard.
+ Capped at 4 bytes.
  ********************************************************************/
+
 import java.util.Arrays;
 import java.util.logging.*;
 

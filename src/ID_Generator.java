@@ -2,7 +2,7 @@
  Name: Aly Ashour
  Student Number: 251 292 647
  Date: November 03, 2023,
- Description: This is a super class that generates IDs.
+ Description: This is a super class of classes that generate IDs.
  ********************************************************************/
 
 public abstract class ID_Generator {
