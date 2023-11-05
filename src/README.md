@@ -1,6 +1,6 @@
 # CAN-Protocol
 The primary Data Class is the Frame class (I'm thinking of renaming it DataFrame).
-I've added as much exception handling as I can think of, it should explain the error 95% of the time.
+I've added as much exception handling as I can think of, it should explain the error like 95% of the time.
 See the Main file for a short example of how the Frame class works.
 
 I've elected to use Kotlin for the state classes as the inheritance structure in this case is much clearer in kotlin.
